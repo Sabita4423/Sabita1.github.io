@@ -1,0 +1,1408 @@
+*{    /* nav bar */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'helvetica';
+}
+
+
+.item1 { grid-area: header; }     /* grid */
+.item2 { grid-area:menu; }
+
+.grid {
+  display: grid;
+  grid-template-areas:
+  'header menu '
+  'header main';
+  grid-gap: 0px;    
+  
+  
+  background: #eb2f64; 
+  background: #FF3366; 
+  background: #BA265D;
+  width: 100%;
+  height: 138.7%;
+  padding: 10px 10px;
+  position: absolute;
+  margin-right: 0;
+}
+
+.grid > div {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 30px;
+}
+.grid .item1  /* text size and alignment */
+{
+    position: absolute;
+    padding: 15px;
+    text-align: justify;
+    height: 310px;
+    width: 1309px;
+    margin-left: 90px;
+    
+  
+}
+.grid .item2   /* text size and alignment */
+{
+    position: absolute;
+    padding: 19px;
+    text-align: justify;
+    height: 140px;
+    width: 1313px;
+    margin-left: -660px;
+    top: 850px;
+}
+
+
+  .logo .log
+  {
+      position: absolute;
+      margin-left: 130px;
+      top: 10px;
+  }
+  
+  .logo .sabita /*profile pic*/
+  {
+      position: absolute;
+      margin-left: 1310px;
+      border-radius:50%;
+      margin-top: 13px;
+  }
+  .logo .search /* fa fa-search */
+  {
+      position: absolute;
+      margin-left: 856px;
+      margin-top: 25px;
+  }
+  .logo a /* name text*/ 
+  {
+      position: absolute;
+      margin-left: 89.5%;
+      margin-top: 25px;
+  }
+  
+  .logo .mark  /* fa fa-bookmark icon */
+  {
+      position: absolute;
+      margin-top: 25px;
+      margin-left: 1190px;
+  }
+  
+  .logo .com /* fa fa-command icon */
+  {
+      position: absolute;
+      margin-top: 25px;
+      margin-left:1250px;
+  }
+  
+  .logo input[type=text] /* search bar */
+  {
+      position: absolute;
+      padding:4px;
+      margin-top: 20px;
+      margin-left: 355px;
+      border: 0px solid #ccc;
+      font-size: 17px;
+      border-radius: 50px;
+      width: 35%;
+      background:#f1f1f1;
+      
+  }
+
+  
+  body{
+     background-color: #fff;
+  }
+  
+  .sidebar{        /* nav bar side */
+    position: absolute; 
+    width: 174px;
+    height: 130%;
+    background: #3a3943;
+    padding: 30px 0px;
+    top: 59px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .wrapper .sidebar ul li{    /* nav bar border size */
+    padding: 15px;
+    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 13px;
+    margin-left: 20px;
+  }    
+  
+  .wrapper .sidebar ul li a{ 
+    color: #fdfcff;
+    display: block;
+  }
+  
+  .wrapper .sidebar ul li a .fas{   /* home, key, tours, plan icons distance in text */
+    width: 25px;
+  }
+  
+  .wrapper .sidebar ul li:hover{
+    background: #eb2f64; 
+    background: #FF3366; 
+    background: #BA265D;
+  }
+  .wrapper .sidebar .trillo
+  {
+      position: absolute;
+      padding: 20px;
+      text-align: center;
+      margin-top: 850px;
+      font-size: 11px;
+      color: #fff;
+      margin-left: 10px;
+  }
+      
+  .wrapper .sidebar ul li:hover a{
+    color: #fff;
+  }
+ 
+  .img{ /* hotels photos */
+
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      float: left;
+      margin-left: 275px;
+      margin-top: 59px;
+      
+      
+  }
+  .rating  /* text and rating */
+  {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      float: left;
+      margin-left: 300px;
+      color: gray;
+      margin-top: 280px;
+  }
+  
+  .rating .hotel-rating
+  {
+      position: absolute;
+      margin-left: 40px;
+  }
+  
+  .rating .location   /* location img */
+  {
+      position: absolute;
+      font-size: 20px;
+      margin-left: 635px;
+      margin-top: 5px;
+  }
+  .rating u             /* location side text position */
+  {
+      position: absolute;
+      margin-left: 660px;
+      font-size: 20px;
+      margin-top: 5px;
+      color:rgb(199, 41, 99);
+      border-bottom: solid  rgb(209, 55, 111);;
+     
+  }
+  
+  
+/* location side votes  text*/
+
+.rating .numb
+{
+    position: absolute;
+    margin-left: 1055px;
+    color: #fff;
+    margin-top: -40px;
+    font-size: 22px;
+    padding: 15px;
+    background: #eb2f64; 
+    background: #FF3366; 
+    background: #BA265D;
+
+}
+
+.rating .votes
+{
+    position: absolute;
+    margin-left: 1060px;
+    color: #fff;
+    margin-top: 1px;
+    font-size: 11px;
+}
+  
+  .item1 { grid-area: header; }     /* grid */
+  .item2 { grid-area:menu; }
+  .item3 {grid-area:main; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'header menu '
+    'header main';
+    grid-gap: 30px;       /* background position, color, margin */
+    background-color: #ccc;
+    width: 75%;
+    height: 78%;
+    padding: 30px 30px;
+    position: absolute;
+    margin-left: 275px;
+    margin-top: 320px;
+    margin-right: 0;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 30px 30px;
+    font-size: 20px;
+  }
+  .grid-container .item1  /* text size and alignment */
+  {
+      position: absolute;
+      padding: 15px;
+      text-align: justify;
+      height: 450px;
+      width: 700px;
+      margin-left: 25px;
+      margin-top: 25px;
+
+      
+  }
+  
+  .grid-container .item1 .points
+  {
+      position: absolute;
+      margin-left: 90px;
+      margin-top: -160px;
+      padding: 20px;
+  }
+
+.grid-container .item1 .bapa  /* grid box image */
+  {
+      position: absolute;
+      border-radius: 100%;
+      margin-top: 0px;
+      margin-left: 40px;
+  }
+.grid-container .item1 .kunu  /* grid box image */
+  {
+      position: absolute;
+      border-radius: 100%;
+      margin-top: 0px;
+      margin-left: 70px;
+  }
+.grid-container .item1 .didi  /* grid box image */
+  {
+      position: absolute;
+      border-radius: 100%;
+      margin-top: 0px;
+      margin-left: 100px;
+  }
+.grid-container .item1 .bou /* grid box image */
+  {
+      position: absolute;
+      border-radius: 100%;
+      margin-top: 0px;
+      margin-left: 130px;
+  }
+
+  
+  .grid-container .item2   /* text size and alignment */
+  {
+      position: absolute;
+      padding: 19px;
+      text-align: justify;
+      margin-left: 225px;
+      width: 270px;
+      height: 210px;
+      top: 25px;
+  }
+  .grid-container .item3  /* text size and alignment */
+  {
+      position: absolute;
+      padding: 19px;
+      text-align: justify;
+      margin-left: 225px;
+      width: 270px;
+      height: 170px;
+      top: 10px;
+
+  }
+  .grid-container .item2 i  /* fa-quote-left icon */
+  {
+      color: #eceaea;
+      font-size: 60px;
+      position: absolute;
+      margin-left: -20px;
+      margin-top: -29px;
+  }
+
+  .grid-container .item2 .top
+  {
+  
+    position: absolute;
+    margin-top: -15px;
+    padding: 20px;
+    margin-top: -36px;
+  }
+  
+  .grid-container .item2 .subu  /* grid box image */
+  {
+      position: absolute;
+      border-radius: 100%;
+      top: 150px;
+  }
+  
+  .grid-container .item2 .name  /* name in grid */
+  {
+      position: absolute;
+      margin-left: 55px;
+      top: 160px;
+  }
+  
+  .grid-container .item2 .date  /* birthday in grid */
+  {
+      position: absolute;
+      margin-left: 55px;
+      margin-top: 115px;
+      font-size: 11px;
+      color: gray;
+  }
+  
+  .grid-container .item2 .number   /*number in item2*/
+  {
+      position: absolute;
+      color: red;
+      margin-left: 200px;
+      top: 150px;
+  }
+  
+  
+  .grid-container .item3 i /* fa-quote-left icon */
+  {
+      color: #eceaea;
+      font-size: 60px;
+      position: absolute;
+      margin-left: -20px;
+      margin-top: -35px;
+  }
+  .grid-container .item3 .top-left
+  {
+  
+    position: absolute;
+    margin-top: -15px;
+    padding: 20px;
+    margin-top: -43px;
+  }
+.grid-container .item3 .jena  /* grid box image */
+  {
+      position: absolute;
+      border-radius: 100%;
+      margin-top: 80px;
+  }
+  
+  .grid-container .item3 .na  /* name in grid */
+  {
+      position: absolute;
+      margin-left: 55px;
+      margin-top: 80px;
+  }
+  
+  .grid-container .item3 .brith  /* birthday in grid */
+  {
+      position: absolute;
+      margin-left: 55px;
+      margin-top: 100px;
+      font-size: 11px;
+      color: gray;
+  }
+  
+  .grid-container .item3 .num   /*number in item2*/
+  {
+      position: absolute;
+      color: red;
+      margin-left: 190px;
+      margin-top: 80px;
+  }
+
+  .grid-container .show
+  {
+      position: absolute;
+      color: #e20f0f;
+      margin-top: 500px;
+      margin-left: 900px;
+      font-size: 18px;
+      border-bottom: solid red;
+  }
+
+  .good
+{
+    position: absolute;
+    margin-top: 900px;
+    margin-left: 500px;
+    color: #000;
+    font-size: 21px;
+}
+.book
+{
+    position: absolute;
+    
+    margin-top:930px ;
+    color: #fff;
+    margin-left: 750px;
+    border-radius: 50px;
+    height: 40px;
+    width: 170px;
+    background: #5a020c;
+    background: -webkit-linear-gradient(to left, #ed213a, #e64937);
+    background: linear-gradient(to left, #ed213a, #93291e);
+
+}
+
+  
+
+
+
+/*---------------------------FLIGHT----------------------------*/
+
+
+.log .planlogo
+{
+    position: absolute;
+    margin-left: 30px;
+}
+.log .in
+{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    margin-left: 1390px;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    background: blue;
+    margin-top: 15px;
+}
+.log .help
+{
+    position: absolute;
+    margin-left: 1120px;
+    margin-top: 15px;
+}
+.log .email
+{
+    position: absolute;
+    margin-left: 1250px;
+    margin-top: 15px;
+}
+
+[type=text] /* search bar */
+  {
+      position: absolute;
+      padding:4px;
+      margin-top: 50px;
+      margin-left: 255px;
+      border: 0px solid #ccc;
+      font-size: 17px;
+      border-radius: 50px;
+      width: 250px;
+      background:#f1f1f1;
+      
+  }
+
+[type=tex] /* search bar */
+  {
+      position: absolute;
+      padding:4px;
+      margin-top: 50px;
+      margin-left: 525px;
+      border: 0px solid #ccc;
+      font-size: 17px;
+      border-radius: 50px;
+      width: 200px;
+      background:#f1f1f1;
+      
+  }
+  [type=te] /* search bar */
+  {
+      position: absolute;
+      padding:4px;
+      margin-top: 50px;
+      margin-left: 735px;
+      border: 0px solid #ccc;
+      font-size: 17px;
+      border-radius: 50px;
+      width: 170px;
+      background:#f1f1f1;
+      
+  }
+  .box .mibox .calendar
+{
+    position: absolute;
+    margin-left: 880px;
+    margin-top: 51px;
+}
+
+  [type=tet] /* search bar */
+  {
+      position: absolute;
+      padding:4px;
+      margin-top: 50px;
+      margin-left: 915px;
+      border: 0px solid #ccc;
+      font-size: 17px;
+      border-radius: 50px;
+      width: 170px;
+      background:#f1f1f1; 
+  }
+  .box .mibox .cal
+  {
+      position: absolute;
+      margin-left: 1060px;
+      margin-top: 51px;
+  }
+
+
+  [type=txt] /* search bar */
+  {
+      position: absolute;
+      padding:4px;
+      margin-top: 50px;
+      margin-left: 1105px;
+      border: 0px solid #ccc;
+      font-size: 17px;
+      border-radius: 50px;
+      width: 190px;
+      background:#f1f1f1;
+      
+  }
+
+
+  .log .s /*profile pic*/
+  {
+      position: absolute;
+      margin-left: 1310px;
+      border-radius:50%;
+      margin-top: 13px;
+  }
+  
+/*--------Slider------*/
+#slider
+{
+    position: absolute;
+    margin-top: 60px;
+    width: 100%;
+}
+
+  
+  .box .mibox{        /* nav bar side */
+    display: table;
+    position: absolute; 
+    width: 1515px;
+    height: 100px;
+    background: #26059c;
+    margin-top: 60px;
+    
+   
+  }
+
+.box .mibox .telegram
+{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    margin-left: 1310px;
+    border-radius: 50px;
+    width: 120px;
+    height: 35px;
+    background: blue;
+    margin-top: 50px;
+}
+.box .mibox .one-way
+{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 250px;
+    color: #fff;
+}
+.box .mibox .round-trip
+{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 350px;
+    color: #fff;
+}
+.box .mibox .multi-city
+{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 480px;
+    color: #fff;
+}
+.box .mibox .lic
+{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 590px;
+    color: #fff;
+}
+.box .mibox .credit
+{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    margin-left: 660px;
+    border-radius: 50px;
+    width: 120px;
+    height: 30px;
+    background: #f12711;
+    background: -webkit-linear-gradient(to left, #f12711, #f5af19);
+    background: linear-gradient(to left, #f12711, #f5af19);
+    margin-top: 6px;
+}
+
+.item7 { grid-area: header; }
+
+
+.grid-containe {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header';
+
+  grid-gap: 10px;
+  background-color: rgb(254, 254, 255);
+  padding: 30px;
+  height:350px;
+  margin-top: 512px;
+   
+}
+
+.grid-containe > div {
+  background-color: rgba(209, 209, 209, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.grid-containe .item7
+{
+position: absolute;
+top:550px;
+width:1250px;
+height: 300px;
+margin-left: 100px;
+}
+
+
+.grid-containe .item7 .delhi /*profile pic*/
+  {
+      position: absolute;
+      margin-left: -190px;
+      border-radius:50%;
+      margin-top: -15px;
+  }
+  
+  .grid-containe .item7 .del
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left: -140px;
+      margin-top: -20px;
+
+  }
+  .grid-containe .item7 .via1
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left: -140px;
+      margin-top: 10px;
+
+  }
+
+  .grid-containe .item7 .chennai /*profile pic*/
+  {
+      position: absolute;
+      margin-left: -190px;
+      border-radius:50%;
+      margin-top: 53px;
+  }
+  
+  .grid-containe .item7 .che
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left: -140px;
+      margin-top: 50px;
+  }
+  .grid-containe .item7 .via2
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left: -140px;
+      margin-top: 80px;
+
+  }
+  .grid-containe .item7 .hyderabad /*profile pic*/
+  {
+      position: absolute;
+      margin-left: -190px;
+      border-radius:50%;
+      margin-top: 113px;
+  }
+  
+  .grid-containe .item7 .hyd
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left: -140px;
+      margin-top: 110px;
+
+  }
+  .grid-containe .item7 .via3
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left: -140px;
+      margin-top: 140px;
+
+  }
+  .grid-containe .item7 .kolkata /*profile pic*/
+  {
+      position: absolute;
+      margin-left: -570px;
+      border-radius:50%;
+      margin-top: -18px;
+  }
+  
+  .grid-containe .item7 .kol
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left: -520px;
+      margin-top: -22px;
+
+  }
+  .grid-containe .item7 .via4
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left: -520px;
+      margin-top: 10px;
+
+  }
+  .grid-containe .item7 .goa /*profile pic*/
+  {
+      position: absolute;
+      margin-left: -570px;
+      border-radius:50%;
+      margin-top: 50px;
+  }
+  
+  .grid-containe .item7 .go
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left: -520px;
+      margin-top: 50px;
+
+  }
+  .grid-containe .item7 .via5
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left: -520px;
+      margin-top: 80px;
+
+  }
+  .grid-containe .item7 .bangalore /*profile pic*/
+  {
+      position: absolute;
+      margin-left: -570px;
+      border-radius:50%;
+      margin-top: 120px;
+  }
+  
+  .grid-containe .item7 .ban
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left: -520px;
+      margin-top: 120px;
+
+  }
+  .grid-containe .item7 .via6
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left: -520px;
+      margin-top: 150px;
+
+  }
+  .grid-containe .item7 .mumbai /*profile pic*/
+  {
+      position: absolute;
+      margin-left: 180px;
+      border-radius:50%;
+      margin-top: -13px;
+  }
+  
+  .grid-containe .item7 .mum
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left: 230px;
+      margin-top: -18px;
+
+  }
+  .grid-containe .item7 .via7
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left: 230px;
+      margin-top: 10px;
+
+  }
+  .grid-containe .item7 .pune /*profile pic*/
+  {
+      position: absolute;
+      margin-left: 180px;
+      border-radius:50%;
+      margin-top: 53px;
+  }
+  
+  .grid-containe .item7 .pun
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left: 230px;
+      margin-top: 50px;
+
+  }
+  .grid-containe .item7 .via8
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left: 230px;
+      margin-top: 80px;
+
+  }
+  .grid-containe .item7 .jaipur /*profile pic*/
+  {
+      position: absolute;
+      margin-left: 180px;
+      border-radius:50%;
+      margin-top: 113px;
+  }
+  
+  .grid-containe .item7 .jai
+  {
+      position: absolute;
+      font-size: 22px;
+      margin-left:230px ;
+      margin-top: 110px;
+
+  }
+  .grid-containe .item7 .via9
+  {
+      position: absolute;
+      font-size: 12px;
+      margin-left:230px ;
+      margin-top: 140px;
+
+  }
+/*--------------------------------box (ques/ans)-----------------------------------------*/
+
+.flight-booking
+{
+    position: absolute;
+    font-size: 36px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+  .div1 {                                    
+    width: 1250px;
+    height: 135px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 130px;
+    text-align: justify;
+    margin-top: 90px;
+    padding: 10px;
+  }
+  .div2 {                                    
+    width: 1250px;
+    height: 135px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 130px;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .div3 {                                    
+    width: 1250px;
+    height: 135px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 130px;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .div4 {                                    
+    width: 1250px;
+    height: 135px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 130px;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .div5 {                                    
+    width: 1250px;
+    height: 135px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 130px;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .div6 {
+    width: 1250px;
+    height: 350px;
+    border: 1px solid rgb(1, 1, 8);
+    margin-left: 130px;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .div7 {
+    width: 1250px;
+    height: 350px;
+    border: 1px solid rgb(1, 1, 8);
+    margin-left: 130px;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .bo .mbox{        /* nav bar side */
+    display: table;
+    position: absolute; 
+    width: 1518px;
+    height: 100px;
+    background: #02000a;
+    margin-top: 30px;
+  }
+  
+  .bo .mbox .follow
+{
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.bo .mbox .kprs
+{
+    position: absolute;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 1150px;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*---------------------------Car Rental----------------------------------*/
+
+/*--------Slider------*/
+#slid
+{
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.box{            
+    display: table;
+    position: relative;
+  }
+  
+  .box .middilbox{        /* nav bar side */
+    position: absolute; 
+    width: 1519px;
+    height: 100px;
+    background: #000000;
+    padding: 10px 0px;
+  }
+
+
+
+  /*---------------------------------Search bar-------------------------------*/
+
+  .box .middilbox .same-location
+  {
+      position: absolute;
+      margin-top: 2px;
+      margin-left: 500px;
+      color: #fff;
+  }
+  .box .middilbox .different-location
+  {
+      position: absolute;
+      margin-top: 2px;
+      margin-left: 250px;
+      color: #fff;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .box .middilbox form.example .tex {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 55%;
+    background: #f1f1f1;
+    margin-top: 30px;
+    margin-left: 250px;
+    border-color: yellow;
+  }
+
+  .box .middilbox .cars
+  {
+      position: absolute;
+      margin-top: 45px;
+      margin-left: -700px;
+  }
+  
+  .box .middilbox form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-top: 30px;
+    border-color: yellow;
+  }
+  .box .middilbox form.example .submi {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #f1f1f1;
+    color: rgb(12, 12, 12);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: -470px;
+    border-color: yellow;
+  }
+  .box .middilbox form.example .subm {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #f1f1f1;
+    color: rgb(5, 5, 5);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: -310px;
+    border-color: yellow;
+  }
+
+  .box .middilbox form.example .submi:hover {
+    background: yellow;
+  }
+  .box .middilbox form.example .subm:hover {
+    background: yellow;
+  }
+  .box .middilbox form.example button:hover {
+    background: rgb(25, 0, 255);
+  }
+  
+  .box .middilbox form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.car-hire
+{
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 130px;
+    font-size: 36px;
+}
+
+.div0 {
+    width: 367px;
+    height: 340px;
+    border: 1px solid black;
+    margin-top:650px;
+    margin-left: 130px;
+    
+  }
+  .div01 {
+    width: 367px;
+    height: 340px;
+    border: 1px solid black;
+    margin-top: -363px;
+    margin-left: 570px;
+  }
+  .div02 {
+    width: 367px;
+    height: 340px;
+    border: 1px solid black;
+    margin-top: -363px;
+    margin-left: 1010px;
+  }
+  .div03 {
+    width: 367px;
+    height: 340px;
+    border: 1px solid black;
+    margin-top:90px;
+    margin-left: 130px;
+    
+  }
+  .div04 {
+    width: 367px;
+    height: 340px;
+    border: 1px solid black;
+    margin-top: -363px;
+    margin-left: 570px;
+  }
+  .div05 {
+    width: 367px;
+    height: 340px;
+    border: 1px solid black;
+    margin-top: -363px;
+    margin-left: 1010px;
+  }
+
+
+  /*---------------------------------------quesations----------------------------------------*/
+  .ask
+  {
+      position: absolute;
+      margin-top: 30px;
+      margin-left: 130px;
+      font-size: 36px;
+  }
+  .div10 {
+    width: 1250px;
+    height: 255px;
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-left: 130px;
+    text-align: justify;
+    padding: 10px;
+  }
+  
+  .div11 {
+    width: 1250px;
+    height: 105px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 130px;
+    text-align: justify;
+    padding: 10px;
+  }
+  .div12 {
+    width: 1250px;
+    height: 105px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 130px;
+    text-align: justify;
+    padding: 10px;
+  }
+  .div13 {
+    width: 1250px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 130px;
+    text-align: justify;
+    padding: 10px;
+  }
+  .div14 {
+    width: 1250px;
+    height: 255px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 130px;
+    text-align: justify;
+    padding: 10px;
+    
+  }
+
+ .boxa{        /* nav bar side */
+    display: table;
+    position: absolute; 
+    width: 1518px;
+    height: 150px;
+    background: #1b0181;
+    margin-top: 40px;
+  }
+  .boxa .save
+  {
+      position: absolute;
+      font-size: 22px;
+      color: #fff;
+      margin-top: 20px;
+      margin-left: 600px;
+      text-align: center;
+  }
+  .boxa .send
+  {
+      position: absolute;
+      font-size: 22;
+      color: #fff;
+      margin-top: 50px;
+      margin-left: 560px;
+      text-align: center;
+  }
+  .boxa input[type=text] /* search bar */
+  {
+      position: absolute;
+      padding:4px;
+      margin-top: 15px;
+      margin-left: -220px;
+      border: 0px solid #ccc;
+      font-size: 17px;
+      width: 130%;
+      background:#f1f1f1;
+      
+      
+  }
+  .boxa .subscribe
+  {
+      position: absolute;
+      margin-left: 200px;
+      margin-top: 10px;
+      width: 100px;
+      background: blue;
+      border-radius: 100px;
+      height: 40px;
+  }
+
+  .mboxa{        /* nav bar side */
+    display: table;
+    position: absolute; 
+    width: 1518px;
+    height: 90px;
+    background: #02000a;
+    margin-top: 190px;
+  }
+.mboxa .follow
+{
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.mboxa .kprs
+{
+    position: absolute;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 1150px;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+}
+ 
+
+/*--------------------------------------Tours page---------------------------------------------------*/
+
+.topbox{        /* nav bar side */
+  position: absolute; 
+  width: 1535px;
+  height: 100px;
+  background: #000000;
+  padding: 10px 0px;
+}
+.topbox .searc
+{
+    position: absolute;
+    margin-left: 960px;
+    margin-top: 20px;
+}
+.topbox input[type=text] /* search bar */
+  {
+      position: absolute;
+      padding:4px;
+      margin-top: 15px;
+      margin-left: 455px;
+      border: 0px solid #ccc;
+      font-size: 17px;
+      border-radius: 50px;
+      width: 35%;
+      background:#f1f1f1;   
+  }
+  .topbox .login
+  {
+    position: absolute;
+    color: #fff;
+    margin-left: 1450px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .topbox .call-now
+  {
+    position: absolute;
+    color: #fff;
+    margin-left: 1250px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .topbox .stores
+  {
+    position: absolute;
+    color: #fff;
+    margin-left: 1380px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  /*--------Slider------*/
+#slide
+{
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    margin-top: 100px;
+}
+.destination
+{
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 300px;
+  font-size: 36px;
+}
+.descripsion
+{
+  position: absolute;
+  margin-top: 630px;
+  margin-left: 300px;
+  font-size: 12px;
+}
+#more {display: none;}
+
