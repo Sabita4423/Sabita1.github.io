@@ -662,11 +662,6 @@
   font-size: 17px;
 }
 
-
-
-
-
-
 .item7 { grid-area: header; }
 
 
@@ -954,7 +949,7 @@ margin-left: 100px;
 #slid
 {
     position: absolute;
-    margin-top: 10px;
+    margin-top: 60px;
     width: 100%;
 }
 
@@ -966,7 +961,8 @@ margin-left: 100px;
   .box .middilbox{        /* nav bar side */
     position: absolute; 
     width: 1519px;
-    height: 100px;
+    height: 120px;
+    top: 60px;
     background: #000000;
     padding: 10px 0px;
   }
@@ -1074,7 +1070,7 @@ margin-left: 100px;
 .car-hire
 {
     position: absolute;
-    margin-top: 570px;
+    margin-top: 880px;
     margin-left: 130px;
     font-size: 36px;
 }
@@ -1082,29 +1078,33 @@ margin-left: 100px;
 .div0 {
     width: 367px;
     height: 340px;
-    border: 1px solid black;
-    margin-top:650px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:950px;
     margin-left: 130px;
     
   }
   .div01 {
     width: 367px;
     height: 340px;
-    border: 1px solid black;
+    text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: -363px;
     margin-left: 570px;
   }
   .div02 {
     width: 367px;
     height: 340px;
-    border: 1px solid black;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: -363px;
     margin-left: 1010px;
   }
   .div03 {
     width: 367px;
     height: 340px;
-    border: 1px solid black;
+    text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top:90px;
     margin-left: 130px;
     
@@ -1112,74 +1112,23 @@ margin-left: 100px;
   .div04 {
     width: 367px;
     height: 340px;
-    border: 1px solid black;
+    text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: -363px;
     margin-left: 570px;
   }
   .div05 {
     width: 367px;
     height: 340px;
-    border: 1px solid black;
+   text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: -363px;
     margin-left: 1010px;
   }
 
 
   /*---------------------------------------quesations----------------------------------------*/
-  .ask
-  {
-      position: absolute;
-      margin-top: 30px;
-      margin-left: 130px;
-      font-size: 36px;
-  }
-  .div10 {
-    width: 1250px;
-    height: 255px;
-    border: 1px solid black;
-    margin-top: 100px;
-    margin-left: 130px;
-    text-align: justify;
-    padding: 10px;
-  }
   
-  .div11 {
-    width: 1250px;
-    height: 105px;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-left: 130px;
-    text-align: justify;
-    padding: 10px;
-  }
-  .div12 {
-    width: 1250px;
-    height: 105px;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-left: 130px;
-    text-align: justify;
-    padding: 10px;
-  }
-  .div13 {
-    width: 1250px;
-    height: 200px;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-left: 130px;
-    text-align: justify;
-    padding: 10px;
-  }
-  .div14 {
-    width: 1250px;
-    height: 255px;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-left: 130px;
-    text-align: justify;
-    padding: 10px;
-    
-  }
 
  .boxa{        /* nav bar side */
     display: table;
@@ -1261,62 +1210,15 @@ margin-left: 100px;
 
 /*--------------------------------------Tours page---------------------------------------------------*/
 
-.topbox{        /* nav bar side */
-  position: absolute; 
-  width: 1535px;
-  height: 100px;
-  background: #000000;
-  padding: 10px 0px;
-}
-.topbox .searc
-{
-    position: absolute;
-    margin-left: 960px;
-    margin-top: 20px;
-}
-.topbox input[type=text] /* search bar */
-  {
-      position: absolute;
-      padding:4px;
-      margin-top: 15px;
-      margin-left: 455px;
-      border: 0px solid #ccc;
-      font-size: 17px;
-      border-radius: 50px;
-      width: 35%;
-      background:#f1f1f1;   
-  }
-  .topbox .login
-  {
-    position: absolute;
-    color: #fff;
-    margin-left: 1450px;
-    margin-top: 10px;
-    padding: 10px;
-  }
-  .topbox .call-now
-  {
-    position: absolute;
-    color: #fff;
-    margin-left: 1250px;
-    margin-top: 10px;
-    padding: 10px;
-  }
-  .topbox .stores
-  {
-    position: absolute;
-    color: #fff;
-    margin-left: 1380px;
-    margin-top: 10px;
-    padding: 10px;
-  }
+
+
   /*--------Slider------*/
 #slide
 {
     position: absolute;
     margin-top: 10px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .destination
 {
